@@ -1,11 +1,12 @@
 
 import './Book.css'
 function Book(props){
+   const {img, titleName,authorName}=props
     return(
         <article className='book'>
-            <img src={props.img} alt='Gita'/>
-            <h2>{props.titleName}</h2>
-            <h3>{props.authorName}</h3>
+            <img src={img} alt='Gita'/>
+            <h2>{titleName}</h2>
+            <h3>{authorName}</h3>
         </article>
     )
 }
